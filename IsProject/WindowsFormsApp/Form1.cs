@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using Excel = Microsoft.Office.Interop.Excel;
-
+using Formatting = Newtonsoft.Json.Formatting;
 
 namespace WindowsFormsApp
 {
@@ -73,6 +73,8 @@ namespace WindowsFormsApp
         public static List<String> ReadSheet(string filename)
         {
             var dictionary = new Dictionary<String, List<String>>();
+
+
             var excelApplication = new Excel.Application();
             excelApplication.Visible = false;
 
@@ -81,38 +83,43 @@ namespace WindowsFormsApp
 
             Excel.Range range = excelWorksheet.UsedRange;
             List<String> columns = new List<String>();
+            List<string> rows = new List<string>();
+            List<string> id = new List<string>();
+            List<string> valores = new List<string>();
 
 
 
-            for (int i = 1; i <= range.Cells.Columns.Count; i++)
+            for (int j = 2; j <= range.Cells.Rows.Count; j++)
             {
+                id.Add(Convert.ToString(excelWorksheet.Cells[j, 1].Value));
+                List<string> header = new List<string>();
 
-                columns.Add(Convert.ToString(excelWorksheet.Cells[1, i].Value));
-                List<string> rows = new List<string>();
-
-                for (int j = 1; j <= range.Cells.Rows.Count; j++)
+                for (int i = 2; i <= range.Cells.Columns.Count; i++)
                 {
-                    
-                    if(Convert.ToString(excelWorksheet.Cells[j + 1, i].Value) == null)
+
+                    if (Convert.ToString(excelWorksheet.Cells[j, i].Value) == null)
                     {
-                        j = range.Cells.Rows.Count;
+                        i = range.Cells.Columns.Count;
                     }
 
-                    
-                    rows.Add(Convert.ToString(excelWorksheet.Cells[j + 1, i].Value));
+                    string sub = $"{Convert.ToString(excelWorksheet.Cells[1, i].Value)}\" : \"{Convert.ToString(excelWorksheet.Cells[j, i].Value)}";
+                    header.Add(sub);
 
                 }
-             
-                dictionary.Add(Convert.ToString(excelWorksheet.Cells[1, i].Value), rows);
+               // if (dictionary.ContainsKey(Convert.ToString(excelWorksheet.Cells[j, 1].Value)) == true) { 
+
+                    dictionary.Add(Convert.ToString(excelWorksheet.Cells[j, 1].Value), header);
+
+                //}
             }
 
-            string JSONResult = JsonConvert.SerializeObject(dictionary);
+            string JSONResult = JsonConvert.SerializeObject(dictionary, Formatting.Indented);
+            string json2 = JSONResult.Replace("\\", String.Empty);
+            string json3 = json2.Replace("[", "{");
+            string json4 = json3.Replace("]", "}");
 
-            Console.WriteLine(JSONResult);
+            Console.WriteLine(json4);
 
-            Console.WriteLine("Fin del for");
-
-            //dictionary.Values.
             excelWorkbook.Close();
             excelApplication.Quit();
 

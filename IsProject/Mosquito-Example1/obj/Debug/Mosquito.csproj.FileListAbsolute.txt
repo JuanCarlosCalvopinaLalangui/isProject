@@ -1,0 +1,15 @@
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\bin\Debug\Mosquito-Example1.exe.config
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\bin\Debug\Mosquito-Example1.exe
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\bin\Debug\Mosquito-Example1.pdb
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\bin\Debug\M2Mqtt.Net.dll
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\bin\Debug\M2Mqtt.Net.pdb
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\obj\Debug\Mosquito.csprojAssemblyReference.cache
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\obj\Debug\Mosquito_Example1.Form1.resources
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\obj\Debug\Mosquito_Example1.Properties.Resources.resources
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\obj\Debug\Mosquito.csproj.GenerateResource.cache
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\obj\Debug\Mosquito.csproj.CoreCompileInputs.cache
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\obj\Debug\Mosquito.csproj.CopyComplete
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\obj\Debug\Mosquito-Example1.exe
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\Mosquito-Example1\obj\Debug\Mosquito-Example1.pdb

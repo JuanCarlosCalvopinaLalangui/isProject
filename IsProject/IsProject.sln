@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsFormsApp\WindowsFormsApp.csproj", "{DFC53EAB-EBD9-48AB-830D-2C143E00CA83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mosquito-Example1", "Mosquito-Example1\Mosquito-Example1.csproj", "{2902FD44-3C76-4E93-8BBA-69D94617391A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DFC53EAB-EBD9-48AB-830D-2C143E00CA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFC53EAB-EBD9-48AB-830D-2C143E00CA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFC53EAB-EBD9-48AB-830D-2C143E00CA83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2902FD44-3C76-4E93-8BBA-69D94617391A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2902FD44-3C76-4E93-8BBA-69D94617391A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2902FD44-3C76-4E93-8BBA-69D94617391A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2902FD44-3C76-4E93-8BBA-69D94617391A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
