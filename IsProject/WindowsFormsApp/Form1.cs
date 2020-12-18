@@ -81,21 +81,26 @@ namespace WindowsFormsApp
 
             Excel.Range range = excelWorksheet.UsedRange;
             List<String> columns = new List<String>();
-            List<string> rows = new List<string>();
+
 
 
             for (int i = 1; i <= range.Cells.Columns.Count; i++)
             {
 
                 columns.Add(Convert.ToString(excelWorksheet.Cells[1, i].Value));
+                List<string> rows = new List<string>();
 
                 for (int j = 1; j <= range.Cells.Rows.Count; j++)
                 {
                     
                     if(Convert.ToString(excelWorksheet.Cells[j + 1, i].Value) == null)
                     {
-                        rows.Add(Convert.ToString(excelWorksheet.Cells[j + 1, i].Value));
+                        j = range.Cells.Rows.Count;
                     }
+
+                    
+                    rows.Add(Convert.ToString(excelWorksheet.Cells[j + 1, i].Value));
+
                 }
              
                 dictionary.Add(Convert.ToString(excelWorksheet.Cells[1, i].Value), rows);
