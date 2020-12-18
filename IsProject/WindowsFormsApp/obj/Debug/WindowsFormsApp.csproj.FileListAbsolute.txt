@@ -11,3 +11,4 @@ C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\WindowsFormsApp\
 C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\WindowsFormsApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\WindowsFormsApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
+C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.ResolveComReference.cache

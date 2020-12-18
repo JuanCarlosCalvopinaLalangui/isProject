@@ -100,6 +100,7 @@ namespace WindowsFormsApp
             this.btnExcelToJson.TabIndex = 5;
             this.btnExcelToJson.Text = "Convert to JSON";
             this.btnExcelToJson.UseVisualStyleBackColor = true;
+            this.btnExcelToJson.Click += new System.EventHandler(this.btnExcelToJson_Click);
             // 
             // Form1
             // 

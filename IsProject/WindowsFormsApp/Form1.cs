@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using Excel = Microsoft.Office.Interop.Excel;
+
 
 namespace WindowsFormsApp
 {
@@ -68,6 +70,77 @@ namespace WindowsFormsApp
 
         }
 
+        public static List<String> ReadSheet(string filename)
+        {
+            var dictionary = new Dictionary<String, List<String>>();
+            var excelApplication = new Excel.Application();
+            excelApplication.Visible = false;
 
+            var excelWorkbook = excelApplication.Workbooks.Open(filename);
+            var excelWorksheet = (Excel.Worksheet)excelWorkbook.Worksheets.get_Item(1);
+
+            Excel.Range range = excelWorksheet.UsedRange;
+            List<String> columns = new List<String>();
+            List<string> rows = new List<string>();
+
+
+            for (int i = 1; i <= range.Cells.Columns.Count; i++)
+            {
+
+                columns.Add(Convert.ToString(excelWorksheet.Cells[1, i].Value));
+
+                for (int j = 1; j <= range.Cells.Rows.Count; j++)
+                {
+                    
+                    if(Convert.ToString(excelWorksheet.Cells[j + 1, i].Value) == null)
+                    {
+                        rows.Add(Convert.ToString(excelWorksheet.Cells[j + 1, i].Value));
+                    }
+                }
+             
+                dictionary.Add(Convert.ToString(excelWorksheet.Cells[1, i].Value), rows);
+            }
+
+            string JSONResult = JsonConvert.SerializeObject(dictionary);
+
+            Console.WriteLine(JSONResult);
+
+            Console.WriteLine("Fin del for");
+
+            //dictionary.Values.
+            excelWorkbook.Close();
+            excelApplication.Quit();
+
+
+            ReleaseCOMObjects(range);
+            ReleaseCOMObjects(excelWorksheet);
+            ReleaseCOMObjects(excelWorkbook);
+            ReleaseCOMObjects(excelApplication);
+
+            return columns;
+        }
+
+        public static void ReleaseCOMObjects(object obj)
+        {
+            try
+            {
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(obj);
+                obj = null;
+            }
+            catch (Exception ex)
+            {
+                obj = null;
+                System.Diagnostics.Debug.WriteLine("Exception occured while releasing object" + ex);
+            }
+            finally
+            {
+                GC.Collect();
+            }
+        }
+
+        private void btnExcelToJson_Click(object sender, EventArgs e)
+        {
+           List<String> results = ReadSheet(txtExcel.Text);
+        }
     }
 }
