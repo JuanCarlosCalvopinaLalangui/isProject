@@ -28,7 +28,7 @@ namespace Mosquito_Example1
         {
             comboBox1.DataSource =topics;
             guid = Guid.NewGuid().ToString();
-            broker = new MqttClient("192.168.1.90");
+            broker = new MqttClient("192.168.1.68");
            // broker = new MqttClient("10.20.133.179");
             broker.Connect(guid);
             if (!broker.IsConnected)

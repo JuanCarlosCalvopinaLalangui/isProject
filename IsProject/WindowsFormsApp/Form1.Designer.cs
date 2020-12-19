@@ -37,6 +37,8 @@ namespace WindowsFormsApp
             this.txtExcel = new System.Windows.Forms.TextBox();
             this.btnSelectExcel = new System.Windows.Forms.Button();
             this.btnExcelToJson = new System.Windows.Forms.Button();
+            this.btnSavejSON = new System.Windows.Forms.Button();
+            this.btnSaveJsonXml = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // xmlDialog
@@ -102,11 +104,33 @@ namespace WindowsFormsApp
             this.btnExcelToJson.UseVisualStyleBackColor = true;
             this.btnExcelToJson.Click += new System.EventHandler(this.btnExcelToJson_Click);
             // 
+            // btnSavejSON
+            // 
+            this.btnSavejSON.Location = new System.Drawing.Point(276, 212);
+            this.btnSavejSON.Name = "btnSavejSON";
+            this.btnSavejSON.Size = new System.Drawing.Size(131, 23);
+            this.btnSavejSON.TabIndex = 6;
+            this.btnSavejSON.Text = "Save File Json Excel";
+            this.btnSavejSON.UseVisualStyleBackColor = true;
+            this.btnSavejSON.Click += new System.EventHandler(this.btnSavejSON_Click);
+            // 
+            // btnSaveJsonXml
+            // 
+            this.btnSaveJsonXml.Location = new System.Drawing.Point(100, 212);
+            this.btnSaveJsonXml.Name = "btnSaveJsonXml";
+            this.btnSaveJsonXml.Size = new System.Drawing.Size(119, 23);
+            this.btnSaveJsonXml.TabIndex = 7;
+            this.btnSaveJsonXml.Text = "Save file xml to json";
+            this.btnSaveJsonXml.UseVisualStyleBackColor = true;
+            this.btnSaveJsonXml.Click += new System.EventHandler(this.btnSaveJsonXml_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(483, 258);
+            this.Controls.Add(this.btnSaveJsonXml);
+            this.Controls.Add(this.btnSavejSON);
             this.Controls.Add(this.btnExcelToJson);
             this.Controls.Add(this.btnSelectExcel);
             this.Controls.Add(this.txtExcel);
@@ -131,6 +155,8 @@ namespace WindowsFormsApp
         private System.Windows.Forms.TextBox txtExcel;
         private System.Windows.Forms.Button btnSelectExcel;
         private System.Windows.Forms.Button btnExcelToJson;
+        private System.Windows.Forms.Button btnSavejSON;
+        private System.Windows.Forms.Button btnSaveJsonXml;
     }
 }
 

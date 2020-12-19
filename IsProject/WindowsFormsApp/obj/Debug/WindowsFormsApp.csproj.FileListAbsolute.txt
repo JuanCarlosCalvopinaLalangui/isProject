@@ -12,3 +12,17 @@ C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\WindowsFormsApp\
 C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\WindowsFormsApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
 C:\Users\mateo\OneDrive\Escritorio\projects\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.ResolveComReference.cache
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\bin\Debug\Newtonsoft.Json.dll
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\bin\Debug\Newtonsoft.Json.xml
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.csprojAssemblyReference.cache
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.ResolveComReference.cache
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+D:\Enhgenharia_Informatica\3ano_1semestre\IS_Integracao_Sistemas\finalProject\isProject\IsProject\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
